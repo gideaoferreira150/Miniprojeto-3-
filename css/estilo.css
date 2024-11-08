@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    margin: 0 15px;
+}
+.menu a {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu a:hover {
+    background: gray;
+}
+.imagem-1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    height: 350px; 
+    overflow: hidden; 
+}
+.imagem-2 {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    z-index: 0; 
+}
+.texto-intro {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    color: #333; 
+    position: relative; 
+    z-index: 1; 
+    text-align: center; 
+    padding: 20px; 
+}
+h1 {
+    font-size: 36px; 
+    margin: 0; 
+}
+p {
+    font-size: 20px; 
+    margin: 0;
+}
+.botao-loja {
+    display: flex;       
+    justify-content: center;   
+    gap: 10px;                 
+    margin-top: 20px;           
+}
+.texto-intro .comprar {
+    width: 200px;              
+    padding: 10px;
+    background-color: #333;  
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.texto-intro .comprar:hover {
+    background: gray;
+    color: black;
+}
+.container-produtos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+h2  {
+    text-align: center;
+    padding-top: 10px;
+    color: #333;
+}
+.produto {
+    width: 220px;  
+    text-align: center;
+    background-color: #fff;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    padding: 15px; 
+}
+.produto img {
+    width: 200px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.produto p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.produto .comprar {
+    margin-top: 10px;
+    width: 200px; 
+    padding: 10px;
+    background-color: #333;  
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.produto .comprar:hover {
+    background: gray;
+    color: black;
+}
+.container-reviews {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.review {
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.foto-client {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.cliente {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.comentario {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+.container-faq {
+    width: 100%;
+    margin-top: 50px; 
+    text-align: center;
+}
+.faq-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.faq {
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+.faq h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.faq p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+.formulario {
+    width: 45%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.formulario label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.formulario button:hover {
+    background-color: gray;
+    color: black;
+}
+.imagem {
+    width: 45%;
+    padding-left: 20px;
+}
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.final {
+    background-color: #333;
+    color: #fff;        
+    text-align: center;    
+    padding: 20px 0;        
+    font-size: 14px;        
+}
+.final a {
+    color: #fff;         
+    text-decoration: none; 
+    margin: 0 10px;         
+}
+.final a:hover {
+    color: gray;         
+    text-decoration: underline; 
+}
+@media (max-width: 768px) {
+    .contato {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .formulario {
+        width: 120%; 
+    }
+    .imagem {
+        width: 80%; 
+    }
+    h1 {
+        font-size: 28px; 
+    }
+    h2 {
+        font-size: 22px; 
+    }
+    .formulario input, .formulario textarea {
+        width: 100%;
+    }
+    .menu ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .menu a {
+        font-size: 16px; 
+    }
+}
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;  
+        padding: 10px 20px;      
+    }
+    .logo img {
+        width: 50px;      
+        height: 50px;            
+        margin-bottom: 20px;      
+    }
+    .menu ul {
+        flex-direction: column;
+        padding: 0;              
+        margin: 0;                
+    }
+    .menu li {
+        margin: 10px 0;    
+    }
+    .menu a {
+        font-size: 16px;         
+        padding: 10px;           
+    }
+    h1 {
+        font-size: 24px;     
+    }
+    p {
+        font-size: 16px;      
+    }
+    .botao-loja {
+        flex-direction: column;  
+        gap: 10px;               
+    }
+    .imagem {
+        display: none;      
+    }
+    .formulario {
+        width: 100%;           
+        margin-bottom: 20px;      
+    }
+    .formulario button {
+        font-size: 16px;     
+        padding: 12px;           
+    }
+     .container-reviews {
+            margin-top: 30px; 
+            padding: 0 20px; 
+         }
+    .reviews-container {
+            flex-direction: column; 
+            gap: 20px;              
+            margin-top: 30px;        
+        }
+    .review {
+            width: 100%;          
+            padding: 15px;           
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            margin: 0;              
+        }
+    .foto-cliente {
+            width: 50px;     
+            height: 50px;            
+            margin-bottom: 10px;     
+        }
+    .nome-cliente {
+            font-size: 16px;         
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;     
+        }
+    .comentario {
+            font-size: 14px;        
+            color: #555;
+            font-style: italic;
+        }
+        .final {
+            font-size: 12px;     
+            padding: 15px 0;      
+        }
+        .final-links {
+            font-size: 12px;     
+            margin-top: 10px;     
+        }
+        .final a {
+            display: block;       
+            margin-bottom: 8px;    
+        }
+}
+
+
+
+
+
+
+
